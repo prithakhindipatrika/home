@@ -15,14 +15,14 @@
 
 
 	        	<a href="">
-		            <button type="button" class="btn btn-secondary m-3">April 2021 Edition (Coming Soon)</button>
+		            <button type="button" class="btn btn-secondary m-3" onClick="onClick()">April 2021 Edition (Coming Soon)</button>
 	        	</a>
 
 	            <br>
 	            
 	            <!-- Copy paste below content to add another magazine -->
 	            <a href="https://online.fliphtml5.com/pfewr/wfhj/" target="blank">
-	            	<button type="button" class="btn btn-info m-3">February 2021 Edition</button>
+	            	<button type="button" class="btn btn-info m-3" onClick="onClick()">February 2021 Edition</button>
 	            </a>
 
 	            <br>
@@ -35,9 +35,20 @@
 	            <a href="mailto:prithakhindipatrika@gmail.com" target="blank">
 	            	<button type="button" class="btn btn-primary m-3">Send your creation</button>
 	            </a>
-
+			
+			
+		    <p>
+			 <p class="text-danger bg-green display-4">Viewed by: <a id="clicks">0</a> people</p> 
+		    </p>
 	        </div>
 	    </div>
+	    <script>
+		  var clicks = 0;
+		  function onClick() {
+		  clicks += 1;
+		  document.getElementById("clicks").innerHTML = clicks;
+		};
+	    </script>
 	</body>
 </html>
 </body>
